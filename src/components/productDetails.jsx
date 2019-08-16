@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 
 class ProductDetails extends Component {
-  handleSave = () => {
+  handleSave = props => {
     // Navigate to /products
+    this.props.history.replace("/products");
   };
 
   render() {
